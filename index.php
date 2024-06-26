@@ -15,7 +15,20 @@ $games = [
     ],
     [
         'HomeTeam' => 'Pisa Basket',
-        
-    ]
+        'AwayTeam' => 'Lucchese Basket',
+        'HomeScore' => '20',
+        'AwayScore' => '120'
+    ],
+    [
+        'HomeTeam' => 'Genovese',
+        'AwayTeam' => 'Prato Basket',
+        'HomeScore' => '90',
+        'AwayScore' => '95'
+    ],
     ];
-    
+
+foreach ($games as $game) {
+    echo $game["HomeTeam"] . " - " . $game["AwayTeam"] . " | " . $game["HomeScore"] . "-" . $game["AwayScore"] . "<br>";
+
+}
+?>
