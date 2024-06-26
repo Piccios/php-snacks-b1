@@ -25,6 +25,13 @@ $games = [
         'HomeScore' => '90',
         'AwayScore' => '95'
     ],
+    [
+        'HomeTeam' => 'Cagliari',
+        'AwayTeam' => 'Firenze',
+        'HomeScore' => '120',
+        'AwayScore' => '120'
+    ],
+
     ];
 
 foreach ($games as $game) {
