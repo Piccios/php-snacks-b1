@@ -28,22 +28,32 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Snack-6</title>
 </head>
 <body>
-    <body>
-        <div class="teachers">
-            
+    <main>
+        <div class="bg-grey">
+            <?php   
+            foreach($db['teachers'] as $teacher){
+                    echo '<div>' . $teacher['name'] . ' ' . $teacher['lastname'] . '</div>';
+                }
+            ?>
         </div>
-        <div class="pm">
-
+        <div class="bg-green">
+            <?php 
+            foreach($db['pm'] as $pm){
+                echo '<div>' . $pm['name'] . ' ' . $pm['lastname'] . '</div>';
+            }
+            ?>
         </div>
-    </body>
+    </main>
 </body>
 </html>
+
+

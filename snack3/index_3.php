@@ -45,7 +45,7 @@ $posts = [
 
 
 
-foreach ($posts as $key => $post) {
+foreach ($posts as $key => $post) { //per ogni post dell'array $posts
     echo "<h1>" . $key . "</h1>";
     foreach ($post as $post) {
         echo "<h2>" . $post['title'] . "</h2>";

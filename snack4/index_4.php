@@ -2,14 +2,17 @@
 
 
 <?php
-    $casualNums = [];
+$casualNums = [];
 
+while (count($casualNums) <= 15) {
 
-    for ($i = 0; $i <= 15; $i++) {
-                $num = rand(1, 100);
-    if (!in_array($num, $casualNums)){
+    $num = rand(1, 100);
+    if (!in_array($num, $casualNums)) {
         array_push($casualNums, $num);
-    }}
+        //$casualNums[] = $num; **opzione possibile per aggiungere in array**
+    }
+}
 
-    var_dump($casualNums);
+var_dump($casualNums);
+
 ?>
