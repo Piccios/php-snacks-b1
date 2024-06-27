@@ -8,11 +8,16 @@ include __DIR__ . '/students.php';
 
 foreach ($students as $student){
     $media = array_sum($student['votes']) / count($student['votes']);
-    echo "Nome: " . $student['name'] . "<br>";
-    echo "Cognome: " . $student['lastname'] . "<br>";
-    echo "Media: " . $media . "<br>";
 }
 
 
 
 ?>
+
+
+<ul>
+        <?php foreach ($students as $student) {
+            echo "<li>" . $student['name'] . "<br>" . $student['lastname'] . "<br>" . $media . "<br>" . "</li>";
+        }
+        ?>
+</ul>
